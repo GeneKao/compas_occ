@@ -99,7 +99,7 @@
 <h1>Surface</h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="compas_occ.geometry.Surface">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">compas_occ.geometry.</span></span><span class="sig-name descname"><span class="pre">Surface</span></span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/surfaces/_surface.py#L4"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">compas_occ.geometry.</span></span><span class="sig-name descname"><span class="pre">Surface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/surfaces/_surface.py#L4"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.data.Data.html#compas.data.Data" title="(in COMPAS v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas.data.data.Data</span></code></a></p>
 <p>Base class for all surfaces in this package.</p>
 <p class="rubric">Methods</p>
@@ -131,10 +131,10 @@
 <td><p>Serialize the data representation of an object to a JSON string.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.Surface.validate_data.html#compas_occ.geometry.Surface.validate_data" title="compas_occ.geometry.Surface.validate_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate_data</span></code></a>()</p></td>
-<td><p>Validate the object’s data against its data schema (<cite>self.DATASCHEMA</cite>).</p></td>
+<td><p>Validate the object's data against its data schema (<cite>self.DATASCHEMA</cite>).</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.Surface.validate_json.html#compas_occ.geometry.Surface.validate_json" title="compas_occ.geometry.Surface.validate_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate_json</span></code></a>()</p></td>
-<td><p>Validate the object’s data against its json schema (<cite>self.JSONSCHEMA</cite>).</p></td>
+<td><p>Validate the object's data against its json schema (<cite>self.JSONSCHEMA</cite>).</p></td>
 </tr>
 </tbody>
 </table>
@@ -282,10 +282,6 @@
     hljs.initHighlighting();
     anchors.add();
 
-    $('.nav-versions .dropdown-item').filter(function(i, ver) {
-      return window.location.href.startsWith(ver.href);
-    }).addClass("active");
-
   });
 
 
@@ -298,6 +294,13 @@
       lines.forEach(version => {
         $("#doc_version_list").append("<a class=\"dropdown-item\" href=\""+ docs_site + version + "\">" + version + "</a>");
       });
+
+      var selected_version = $('.nav-versions .dropdown-item').filter(function(i, ver) {
+        return window.location.href.startsWith(ver.href);
+      });
+      selected_version.addClass('active');
+      $("#bd-versions").text(selected_version.text());
+
     })
   }
   </script>

@@ -99,7 +99,7 @@
 <h1>NurbsSurface</h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="compas_occ.geometry.NurbsSurface">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">compas_occ.geometry.</span></span><span class="sig-name descname"><span class="pre">NurbsSurface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/surfaces/nurbs.py#L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">compas_occ.geometry.</span></span><span class="sig-name descname"><span class="pre">NurbsSurface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/surfaces/nurbs.py#L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Bases: <a class="reference internal" href="compas_occ.geometry.Surface.html#compas_occ.geometry.Surface" title="compas_occ.geometry.surfaces._surface.Surface"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas_occ.geometry.surfaces._surface.Surface</span></code></a></p>
 <p>Class representing a NURBS surface based on the BSplineSurface of the OCC geometry kernel.</p>
 <dl class="field-list simple">
@@ -166,7 +166,7 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.NurbsSurface.from_occ.html#compas_occ.geometry.NurbsSurface.from_occ" title="compas_occ.geometry.NurbsSurface.from_occ"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_occ</span></code></a>(occ_surface)</p></td>
 <td><p>Construct a NUBRS surface from an existing OCC BSplineSurface.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.NurbsSurface.from_parameters.html#compas_occ.geometry.NurbsSurface.from_parameters" title="compas_occ.geometry.NurbsSurface.from_parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_parameters</span></code></a>(points, weights, u_knots, …)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.NurbsSurface.from_parameters.html#compas_occ.geometry.NurbsSurface.from_parameters" title="compas_occ.geometry.NurbsSurface.from_parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_parameters</span></code></a>(points, weights, u_knots, ...)</p></td>
 <td><p>Construct a NURBS surface from explicit parameters.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.NurbsSurface.from_points.html#compas_occ.geometry.NurbsSurface.from_points" title="compas_occ.geometry.NurbsSurface.from_points"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_points</span></code></a>(points[, u_degree, v_degree])</p></td>
@@ -224,10 +224,10 @@
 <td><p>Compute evenly spaced parameters over the surface domain in the V direction.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.NurbsSurface.validate_data.html#compas_occ.geometry.NurbsSurface.validate_data" title="compas_occ.geometry.NurbsSurface.validate_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate_data</span></code></a>()</p></td>
-<td><p>Validate the object’s data against its data schema (<cite>self.DATASCHEMA</cite>).</p></td>
+<td><p>Validate the object's data against its data schema (<cite>self.DATASCHEMA</cite>).</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.NurbsSurface.validate_json.html#compas_occ.geometry.NurbsSurface.validate_json" title="compas_occ.geometry.NurbsSurface.validate_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate_json</span></code></a>()</p></td>
-<td><p>Validate the object’s data against its json schema (<cite>self.JSONSCHEMA</cite>).</p></td>
+<td><p>Validate the object's data against its json schema (<cite>self.JSONSCHEMA</cite>).</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.NurbsSurface.xyz.html#compas_occ.geometry.NurbsSurface.xyz" title="compas_occ.geometry.NurbsSurface.xyz"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyz</span></code></a>([nu, nv])</p></td>
 <td><p>Compute point locations corresponding to evenly spaced parameters over the surface domain.</p></td>
@@ -378,10 +378,6 @@
     hljs.initHighlighting();
     anchors.add();
 
-    $('.nav-versions .dropdown-item').filter(function(i, ver) {
-      return window.location.href.startsWith(ver.href);
-    }).addClass("active");
-
   });
 
 
@@ -394,6 +390,13 @@
       lines.forEach(version => {
         $("#doc_version_list").append("<a class=\"dropdown-item\" href=\""+ docs_site + version + "\">" + version + "</a>");
       });
+
+      var selected_version = $('.nav-versions .dropdown-item').filter(function(i, ver) {
+        return window.location.href.startsWith(ver.href);
+      });
+      selected_version.addClass('active');
+      $("#bd-versions").text(selected_version.text());
+
     })
   }
   </script>
