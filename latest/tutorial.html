@@ -91,6 +91,75 @@
         
         <section id="tutorial">
 <h1>Tutorial</h1>
+<p><code class="docutils literal notranslate"><span class="pre">compas_occ</span></code> provides an easy to use interface to the Open Cascade 3D geometry kernel,
+built around the Python bindings provided in <code class="docutils literal notranslate"><span class="pre">pythonocc-core</span></code>.</p>
+<p><a class="reference internal" href="api/compas_occ.geometry.html#module-compas_occ.geometry" title="compas_occ.geometry"><code class="xref py py-mod docutils literal notranslate"><span class="pre">compas_occ.geometry</span></code></a> defines <a class="reference internal" href="api/generated/compas_occ.geometry.OCCNurbsCurve.html#compas_occ.geometry.OCCNurbsCurve" title="compas_occ.geometry.OCCNurbsCurve"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas_occ.geometry.OCCNurbsCurve</span></code></a>
+and <a class="reference internal" href="api/generated/compas_occ.geometry.OCCNurbsSurface.html#compas_occ.geometry.OCCNurbsSurface" title="compas_occ.geometry.OCCNurbsSurface"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas_occ.geometry.OCCNurbsSurface</span></code></a>, which are wrappers around the
+<code class="docutils literal notranslate"><span class="pre">BSplineCurve</span></code> and <code class="docutils literal notranslate"><span class="pre">BSplineSurface</span></code> objects of OCC, repsectively.
+The <a class="reference internal" href="api/compas_occ.html#module-compas_occ" title="compas_occ"><code class="xref py py-mod docutils literal notranslate"><span class="pre">compas_occ</span></code></a> wrappers provide an API for working with NURBS curves and surfaces
+similar to the API of RhinoCommon.</p>
+<p><a class="reference internal" href="api/compas_occ.brep.html#module-compas_occ.brep" title="compas_occ.brep"><code class="xref py py-mod docutils literal notranslate"><span class="pre">compas_occ.brep</span></code></a> is a package for working with Boundary Representation objects
+with the NURBS curves and surfaces of <a class="reference internal" href="api/compas_occ.geometry.html#module-compas_occ.geometry" title="compas_occ.geometry"><code class="xref py py-mod docutils literal notranslate"><span class="pre">compas_occ.geometry</span></code></a> as underlying geometry.</p>
+<section id="curves">
+<h2>Curves</h2>
+<p>The simplest way to construct a curve is from its control points.</p>
+<div class="language-python notranslate"><div class="highlight"><pre><code><span></span><span class="kn">from</span> <span class="nn">compas.geometry</span> <span class="kn">import</span> <span class="n">Point</span>
+<span class="kn">from</span> <span class="nn">compas_occ.geometry</span> <span class="kn">import</span> <span class="n">OCCNurbsCurve</span> <span class="k">as</span> <span class="n">NurbsCurve</span>
+
+<span class="n">points</span> <span class="o">=</span> <span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]</span>
+<span class="n">curve</span> <span class="o">=</span> <span class="n">NurbsCurve</span><span class="o">.</span><span class="n">from_points</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<p>Other construction methods are</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="api/generated/compas_occ.geometry.OCCNurbsCurve.from_parameters.html#compas_occ.geometry.OCCNurbsCurve.from_parameters" title="compas_occ.geometry.OCCNurbsCurve.from_parameters"><code class="xref py py-meth docutils literal notranslate"><span class="pre">OCCNurbsCurve.from_parameters()</span></code></a></p></li>
+<li><p><a class="reference internal" href="api/generated/compas_occ.geometry.OCCNurbsCurve.from_interpolation.html#compas_occ.geometry.OCCNurbsCurve.from_interpolation" title="compas_occ.geometry.OCCNurbsCurve.from_interpolation"><code class="xref py py-meth docutils literal notranslate"><span class="pre">OCCNurbsCurve.from_interpolation()</span></code></a></p></li>
+<li><p><a class="reference internal" href="api/generated/compas_occ.geometry.OCCNurbsCurve.from_step.html#compas_occ.geometry.OCCNurbsCurve.from_step" title="compas_occ.geometry.OCCNurbsCurve.from_step"><code class="xref py py-meth docutils literal notranslate"><span class="pre">OCCNurbsCurve.from_step()</span></code></a></p></li>
+<li><p><a class="reference internal" href="api/generated/compas_occ.geometry.OCCNurbsCurve.from_line.html#compas_occ.geometry.OCCNurbsCurve.from_line" title="compas_occ.geometry.OCCNurbsCurve.from_line"><code class="xref py py-meth docutils literal notranslate"><span class="pre">OCCNurbsCurve.from_line()</span></code></a></p></li>
+<li><p><a class="reference internal" href="api/generated/compas_occ.geometry.OCCNurbsCurve.from_arc.html#compas_occ.geometry.OCCNurbsCurve.from_arc" title="compas_occ.geometry.OCCNurbsCurve.from_arc"><code class="xref py py-meth docutils literal notranslate"><span class="pre">OCCNurbsCurve.from_arc()</span></code></a></p></li>
+<li><p><a class="reference internal" href="api/generated/compas_occ.geometry.OCCNurbsCurve.from_circle.html#compas_occ.geometry.OCCNurbsCurve.from_circle" title="compas_occ.geometry.OCCNurbsCurve.from_circle"><code class="xref py py-meth docutils literal notranslate"><span class="pre">OCCNurbsCurve.from_circle()</span></code></a></p></li>
+<li><p><a class="reference internal" href="api/generated/compas_occ.geometry.OCCNurbsCurve.from_ellipse.html#compas_occ.geometry.OCCNurbsCurve.from_ellipse" title="compas_occ.geometry.OCCNurbsCurve.from_ellipse"><code class="xref py py-meth docutils literal notranslate"><span class="pre">OCCNurbsCurve.from_ellipse()</span></code></a></p></li>
+</ul>
+<p>Since <a class="reference internal" href="api/generated/compas_occ.geometry.OCCNurbsCurve.html#compas_occ.geometry.OCCNurbsCurve" title="compas_occ.geometry.OCCNurbsCurve"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCCNurbsCurve</span></code></a> implements the COMPAS data framework,
+there are also the following special methods (see <span class="xref std std-ref">Data</span> for more information).</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="api/generated/compas_occ.geometry.OCCNurbsCurve.from_data.html#compas_occ.geometry.OCCNurbsCurve.from_data" title="compas_occ.geometry.OCCNurbsCurve.from_data"><code class="xref py py-meth docutils literal notranslate"><span class="pre">OCCNurbsCurve.from_data()</span></code></a></p></li>
+<li><p><a class="reference internal" href="api/generated/compas_occ.geometry.OCCNurbsCurve.from_json.html#compas_occ.geometry.OCCNurbsCurve.from_json" title="compas_occ.geometry.OCCNurbsCurve.from_json"><code class="xref py py-meth docutils literal notranslate"><span class="pre">OCCNurbsCurve.from_json()</span></code></a></p></li>
+</ul>
+<p>Curves are currently not directly supported by <code class="xref py py-mod docutils literal notranslate"><span class="pre">compas_view2</span></code>.
+However, they can be easily visualised by using a high-resolution polyline instead.</p>
+<div class="language-python notranslate"><div class="highlight"><pre><code><span></span><span class="kn">from</span> <span class="nn">compas.geometry</span> <span class="kn">import</span> <span class="n">Point</span><span class="p">,</span> <span class="n">Polyline</span>
+<span class="kn">from</span> <span class="nn">compas_occ.geometry</span> <span class="kn">import</span> <span class="n">OCCNurbsCurve</span> <span class="k">as</span> <span class="n">NurbsCurve</span>
+<span class="kn">from</span> <span class="nn">compas_view2.app</span> <span class="kn">import</span> <span class="n">App</span>
+
+<span class="n">points</span> <span class="o">=</span> <span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]</span>
+<span class="n">curve</span> <span class="o">=</span> <span class="n">NurbsCurve</span><span class="o">.</span><span class="n">from_points</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
+
+<span class="n">viewer</span> <span class="o">=</span> <span class="n">App</span><span class="p">()</span>
+
+<span class="n">viewer</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Polyline</span><span class="p">(</span><span class="n">curve</span><span class="o">.</span><span class="n">locus</span><span class="p">()),</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">viewer</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Polyline</span><span class="p">(</span><span class="n">curve</span><span class="o">.</span><span class="n">points</span><span class="p">),</span> <span class="n">show_points</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">viewer</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+</div>
+</section>
+<section id="surfaces">
+<h2>Surfaces</h2>
+<p><em>…coming soon…</em></p>
+</section>
+<section id="data">
+<h2>Data</h2>
+<p><em>…coming soon…</em></p>
+</section>
+<section id="rhino">
+<h2>Rhino</h2>
+<p><em>…coming soon…</em></p>
+</section>
+<section id="blender">
+<h2>Blender</h2>
+<p><em>…coming soon…</em></p>
+</section>
 </section>
 
         
@@ -126,7 +195,14 @@
       <div class="d-none d-xl-block col-xl-2 compas-toc" role="toc">
         
         <ul class="nav flex-column" id="compas-toc">
-<li class="nav-item"><a class="nav-link reference internal" href="#">Tutorial</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#">Tutorial</a><ul class="nav flex-column">
+<li class="nav-item"><a class="nav-link reference internal" href="#curves">Curves</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#surfaces">Surfaces</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#data">Data</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#rhino">Rhino</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#blender">Blender</a></li>
+</ul>
+</li>
 </ul>
 
       </div>
