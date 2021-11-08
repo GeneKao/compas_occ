@@ -99,8 +99,8 @@
 <h1>OCCNurbsCurve</h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="compas_occ.geometry.OCCNurbsCurve">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">compas_occ.geometry.</span></span><span class="sig-name descname"><span class="pre">OCCNurbsCurve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/curves/nurbs.py#L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">compas.geometry.geometry.Geometry</span></code></p>
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">compas_occ.geometry.</span></span><span class="sig-name descname"><span class="pre">OCCNurbsCurve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/curves/nurbs.py#L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">compas.geometry.curves.nurbs.NurbsCurve</span></code></p>
 <p>Class representing a NURBS curve based on the BSplineCurve of the OCC geometry kernel.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -161,106 +161,109 @@
 <tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.divide_by_length.html#compas_occ.geometry.OCCNurbsCurve.divide_by_length" title="compas_occ.geometry.OCCNurbsCurve.divide_by_length"><code class="xref py py-obj docutils literal notranslate"><span class="pre">divide_by_length</span></code></a>(length)</p></td>
 <td><p>Divide the curve into segments of specified length.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.frame_at.html#compas_occ.geometry.OCCNurbsCurve.frame_at" title="compas_occ.geometry.OCCNurbsCurve.frame_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">frame_at</span></code></a>(t)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.fair.html#compas_occ.geometry.OCCNurbsCurve.fair" title="compas_occ.geometry.OCCNurbsCurve.fair"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fair</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.frame_at.html#compas_occ.geometry.OCCNurbsCurve.frame_at" title="compas_occ.geometry.OCCNurbsCurve.frame_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">frame_at</span></code></a>(t)</p></td>
 <td><p>Compute the local frame at a point on the curve.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_arc.html#compas_occ.geometry.OCCNurbsCurve.from_arc" title="compas_occ.geometry.OCCNurbsCurve.from_arc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_arc</span></code></a>(arc, degree[, pointcount])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_arc.html#compas_occ.geometry.OCCNurbsCurve.from_arc" title="compas_occ.geometry.OCCNurbsCurve.from_arc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_arc</span></code></a>(arc, degree[, pointcount])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_circle.html#compas_occ.geometry.OCCNurbsCurve.from_circle" title="compas_occ.geometry.OCCNurbsCurve.from_circle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_circle</span></code></a>(circle)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_circle.html#compas_occ.geometry.OCCNurbsCurve.from_circle" title="compas_occ.geometry.OCCNurbsCurve.from_circle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_circle</span></code></a>(circle)</p></td>
 <td><p>Construct a NURBS curve from a circle.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_data.html#compas_occ.geometry.OCCNurbsCurve.from_data" title="compas_occ.geometry.OCCNurbsCurve.from_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_data</span></code></a>(data)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_data.html#compas_occ.geometry.OCCNurbsCurve.from_data" title="compas_occ.geometry.OCCNurbsCurve.from_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_data</span></code></a>(data)</p></td>
 <td><p>Construct a NURBS curve from its data representation.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_edge.html#compas_occ.geometry.OCCNurbsCurve.from_edge" title="compas_occ.geometry.OCCNurbsCurve.from_edge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_edge</span></code></a>(edge)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_edge.html#compas_occ.geometry.OCCNurbsCurve.from_edge" title="compas_occ.geometry.OCCNurbsCurve.from_edge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_edge</span></code></a>(edge)</p></td>
 <td><p>Construct a NURBS curve from an existing OCC TopoDS_Edge.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_ellipse.html#compas_occ.geometry.OCCNurbsCurve.from_ellipse" title="compas_occ.geometry.OCCNurbsCurve.from_ellipse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_ellipse</span></code></a>(ellipse)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_ellipse.html#compas_occ.geometry.OCCNurbsCurve.from_ellipse" title="compas_occ.geometry.OCCNurbsCurve.from_ellipse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_ellipse</span></code></a>(ellipse)</p></td>
 <td><p>Construct a NURBS curve from an ellipse.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_interpolation.html#compas_occ.geometry.OCCNurbsCurve.from_interpolation" title="compas_occ.geometry.OCCNurbsCurve.from_interpolation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_interpolation</span></code></a>(points[, precision])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_interpolation.html#compas_occ.geometry.OCCNurbsCurve.from_interpolation" title="compas_occ.geometry.OCCNurbsCurve.from_interpolation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_interpolation</span></code></a>(points[, precision])</p></td>
 <td><p>Construct a NURBS curve by interpolating a set of points.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_json.html#compas_occ.geometry.OCCNurbsCurve.from_json" title="compas_occ.geometry.OCCNurbsCurve.from_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_json</span></code></a>(filepath)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_json.html#compas_occ.geometry.OCCNurbsCurve.from_json" title="compas_occ.geometry.OCCNurbsCurve.from_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_json</span></code></a>(filepath)</p></td>
 <td><p>Construct an object from serialized data contained in a JSON file.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_jsonstring.html#compas_occ.geometry.OCCNurbsCurve.from_jsonstring" title="compas_occ.geometry.OCCNurbsCurve.from_jsonstring"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_jsonstring</span></code></a>(string)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_jsonstring.html#compas_occ.geometry.OCCNurbsCurve.from_jsonstring" title="compas_occ.geometry.OCCNurbsCurve.from_jsonstring"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_jsonstring</span></code></a>(string)</p></td>
 <td><p>Construct an object from serialized data contained in a JSON string.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_line.html#compas_occ.geometry.OCCNurbsCurve.from_line" title="compas_occ.geometry.OCCNurbsCurve.from_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_line</span></code></a>(line)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_line.html#compas_occ.geometry.OCCNurbsCurve.from_line" title="compas_occ.geometry.OCCNurbsCurve.from_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_line</span></code></a>(line)</p></td>
 <td><p>Construct a NURBS curve from a line.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_occ.html#compas_occ.geometry.OCCNurbsCurve.from_occ" title="compas_occ.geometry.OCCNurbsCurve.from_occ"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_occ</span></code></a>(occ_curve)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_occ.html#compas_occ.geometry.OCCNurbsCurve.from_occ" title="compas_occ.geometry.OCCNurbsCurve.from_occ"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_occ</span></code></a>(occ_curve)</p></td>
 <td><p>Construct a NURBS curve from an existing OCC BSplineCurve.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_parameters.html#compas_occ.geometry.OCCNurbsCurve.from_parameters" title="compas_occ.geometry.OCCNurbsCurve.from_parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_parameters</span></code></a>(points, weights, knots, ...)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_parameters.html#compas_occ.geometry.OCCNurbsCurve.from_parameters" title="compas_occ.geometry.OCCNurbsCurve.from_parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_parameters</span></code></a>(points, weights, knots, ...)</p></td>
 <td><p>Construct a NURBS curve from explicit curve parameters.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_points.html#compas_occ.geometry.OCCNurbsCurve.from_points" title="compas_occ.geometry.OCCNurbsCurve.from_points"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_points</span></code></a>(points[, degree])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_points.html#compas_occ.geometry.OCCNurbsCurve.from_points" title="compas_occ.geometry.OCCNurbsCurve.from_points"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_points</span></code></a>(points[, degree])</p></td>
 <td><p>Construct a NURBS curve from control points.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_step.html#compas_occ.geometry.OCCNurbsCurve.from_step" title="compas_occ.geometry.OCCNurbsCurve.from_step"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_step</span></code></a>(filepath)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.from_step.html#compas_occ.geometry.OCCNurbsCurve.from_step" title="compas_occ.geometry.OCCNurbsCurve.from_step"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_step</span></code></a>(filepath)</p></td>
 <td><p>Load a NURBS curve from an STP file.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.length.html#compas_occ.geometry.OCCNurbsCurve.length" title="compas_occ.geometry.OCCNurbsCurve.length"><code class="xref py py-obj docutils literal notranslate"><span class="pre">length</span></code></a>([precision])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.length.html#compas_occ.geometry.OCCNurbsCurve.length" title="compas_occ.geometry.OCCNurbsCurve.length"><code class="xref py py-obj docutils literal notranslate"><span class="pre">length</span></code></a>([precision])</p></td>
 <td><p>Compute the length of the curve.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.locus.html#compas_occ.geometry.OCCNurbsCurve.locus" title="compas_occ.geometry.OCCNurbsCurve.locus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">locus</span></code></a>([resolution])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.locus.html#compas_occ.geometry.OCCNurbsCurve.locus" title="compas_occ.geometry.OCCNurbsCurve.locus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">locus</span></code></a>([resolution])</p></td>
 <td><p>Compute the locus of the curve.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.obb.html#compas_occ.geometry.OCCNurbsCurve.obb" title="compas_occ.geometry.OCCNurbsCurve.obb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">obb</span></code></a>([precision])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.obb.html#compas_occ.geometry.OCCNurbsCurve.obb" title="compas_occ.geometry.OCCNurbsCurve.obb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">obb</span></code></a>([precision])</p></td>
 <td><p>Compute the oriented bounding box of the curve.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.point_at.html#compas_occ.geometry.OCCNurbsCurve.point_at" title="compas_occ.geometry.OCCNurbsCurve.point_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">point_at</span></code></a>(u)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.point_at.html#compas_occ.geometry.OCCNurbsCurve.point_at" title="compas_occ.geometry.OCCNurbsCurve.point_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">point_at</span></code></a>(u)</p></td>
 <td><p>Compute a point on the curve.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.reverse.html#compas_occ.geometry.OCCNurbsCurve.reverse" title="compas_occ.geometry.OCCNurbsCurve.reverse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reverse</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.reverse.html#compas_occ.geometry.OCCNurbsCurve.reverse" title="compas_occ.geometry.OCCNurbsCurve.reverse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reverse</span></code></a>()</p></td>
 <td><p>Reverse the parametrisation of the curve.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.segment.html#compas_occ.geometry.OCCNurbsCurve.segment" title="compas_occ.geometry.OCCNurbsCurve.segment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">segment</span></code></a>(u, v[, precision])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.segment.html#compas_occ.geometry.OCCNurbsCurve.segment" title="compas_occ.geometry.OCCNurbsCurve.segment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">segment</span></code></a>(u, v[, precision])</p></td>
 <td><p>Modifies this curve by segmenting it between the parameters u and v.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.segmented.html#compas_occ.geometry.OCCNurbsCurve.segmented" title="compas_occ.geometry.OCCNurbsCurve.segmented"><code class="xref py py-obj docutils literal notranslate"><span class="pre">segmented</span></code></a>(u, v[, precision])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.segmented.html#compas_occ.geometry.OCCNurbsCurve.segmented" title="compas_occ.geometry.OCCNurbsCurve.segmented"><code class="xref py py-obj docutils literal notranslate"><span class="pre">segmented</span></code></a>(u, v[, precision])</p></td>
 <td><p>Returns a copy of this curve by segmenting it between the parameters u and v.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.space.html#compas_occ.geometry.OCCNurbsCurve.space" title="compas_occ.geometry.OCCNurbsCurve.space"><code class="xref py py-obj docutils literal notranslate"><span class="pre">space</span></code></a>([n])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.space.html#compas_occ.geometry.OCCNurbsCurve.space" title="compas_occ.geometry.OCCNurbsCurve.space"><code class="xref py py-obj docutils literal notranslate"><span class="pre">space</span></code></a>([n])</p></td>
 <td><p>Compute evenly spaced parameters over the curve domain.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.tangent_at.html#compas_occ.geometry.OCCNurbsCurve.tangent_at" title="compas_occ.geometry.OCCNurbsCurve.tangent_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tangent_at</span></code></a>(t)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.tangent_at.html#compas_occ.geometry.OCCNurbsCurve.tangent_at" title="compas_occ.geometry.OCCNurbsCurve.tangent_at"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tangent_at</span></code></a>(t)</p></td>
 <td><p>Compute the tangent vector at a point on the curve.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.to_data.html#compas_occ.geometry.OCCNurbsCurve.to_data" title="compas_occ.geometry.OCCNurbsCurve.to_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_data</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.to_data.html#compas_occ.geometry.OCCNurbsCurve.to_data" title="compas_occ.geometry.OCCNurbsCurve.to_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_data</span></code></a>()</p></td>
 <td><p>Convert an object to its native data representation.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.to_json.html#compas_occ.geometry.OCCNurbsCurve.to_json" title="compas_occ.geometry.OCCNurbsCurve.to_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_json</span></code></a>(filepath[, pretty])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.to_json.html#compas_occ.geometry.OCCNurbsCurve.to_json" title="compas_occ.geometry.OCCNurbsCurve.to_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_json</span></code></a>(filepath[, pretty])</p></td>
 <td><p>Serialize the data representation of an object to a JSON file.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.to_jsonstring.html#compas_occ.geometry.OCCNurbsCurve.to_jsonstring" title="compas_occ.geometry.OCCNurbsCurve.to_jsonstring"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_jsonstring</span></code></a>([pretty])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.to_jsonstring.html#compas_occ.geometry.OCCNurbsCurve.to_jsonstring" title="compas_occ.geometry.OCCNurbsCurve.to_jsonstring"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_jsonstring</span></code></a>([pretty])</p></td>
 <td><p>Serialize the data representation of an object to a JSON string.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.to_line.html#compas_occ.geometry.OCCNurbsCurve.to_line" title="compas_occ.geometry.OCCNurbsCurve.to_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_line</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.to_line.html#compas_occ.geometry.OCCNurbsCurve.to_line" title="compas_occ.geometry.OCCNurbsCurve.to_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_line</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.to_polyline.html#compas_occ.geometry.OCCNurbsCurve.to_polyline" title="compas_occ.geometry.OCCNurbsCurve.to_polyline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_polyline</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.to_polyline.html#compas_occ.geometry.OCCNurbsCurve.to_polyline" title="compas_occ.geometry.OCCNurbsCurve.to_polyline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_polyline</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.to_step.html#compas_occ.geometry.OCCNurbsCurve.to_step" title="compas_occ.geometry.OCCNurbsCurve.to_step"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_step</span></code></a>(filepath[, schema])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.to_step.html#compas_occ.geometry.OCCNurbsCurve.to_step" title="compas_occ.geometry.OCCNurbsCurve.to_step"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_step</span></code></a>(filepath[, schema])</p></td>
 <td><p>Write the curve geometry to a STP file.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.transform.html#compas_occ.geometry.OCCNurbsCurve.transform" title="compas_occ.geometry.OCCNurbsCurve.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(T)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.transform.html#compas_occ.geometry.OCCNurbsCurve.transform" title="compas_occ.geometry.OCCNurbsCurve.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(T)</p></td>
 <td><p>Transform this curve.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.transformed.html#compas_occ.geometry.OCCNurbsCurve.transformed" title="compas_occ.geometry.OCCNurbsCurve.transformed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transformed</span></code></a>(T)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.transformed.html#compas_occ.geometry.OCCNurbsCurve.transformed" title="compas_occ.geometry.OCCNurbsCurve.transformed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transformed</span></code></a>(T)</p></td>
 <td><p>Transform a copy of the curve.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.validate_data.html#compas_occ.geometry.OCCNurbsCurve.validate_data" title="compas_occ.geometry.OCCNurbsCurve.validate_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate_data</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.validate_data.html#compas_occ.geometry.OCCNurbsCurve.validate_data" title="compas_occ.geometry.OCCNurbsCurve.validate_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate_data</span></code></a>()</p></td>
 <td><p>Validate the object's data against its data schema (<cite>self.DATASCHEMA</cite>).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.validate_json.html#compas_occ.geometry.OCCNurbsCurve.validate_json" title="compas_occ.geometry.OCCNurbsCurve.validate_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate_json</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.validate_json.html#compas_occ.geometry.OCCNurbsCurve.validate_json" title="compas_occ.geometry.OCCNurbsCurve.validate_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">validate_json</span></code></a>()</p></td>
 <td><p>Validate the object's data against its json schema (<cite>self.JSONSCHEMA</cite>).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.xyz.html#compas_occ.geometry.OCCNurbsCurve.xyz" title="compas_occ.geometry.OCCNurbsCurve.xyz"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyz</span></code></a>([n])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.xyz.html#compas_occ.geometry.OCCNurbsCurve.xyz" title="compas_occ.geometry.OCCNurbsCurve.xyz"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyz</span></code></a>([n])</p></td>
 <td><p>Compute point locations corresponding to evenly spaced parameters over the curve domain.</p></td>
 </tr>
 </tbody>

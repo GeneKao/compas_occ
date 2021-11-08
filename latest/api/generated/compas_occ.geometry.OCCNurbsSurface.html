@@ -99,8 +99,8 @@
 <h1>OCCNurbsSurface</h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="compas_occ.geometry.OCCNurbsSurface">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">compas_occ.geometry.</span></span><span class="sig-name descname"><span class="pre">OCCNurbsSurface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/surfaces/nurbs.py#L91"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">compas.geometry.geometry.Geometry</span></code></p>
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">compas_occ.geometry.</span></span><span class="sig-name descname"><span class="pre">OCCNurbsSurface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/surfaces/nurbs.py#L91"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">compas.geometry.surfaces.nurbs.NurbsSurface</span></code></p>
 <p>Class representing a NURBS surface based on the BSplineSurface of the OCC geometry kernel.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -133,7 +133,7 @@
 <tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsSurface.boundary.html#compas_occ.geometry.OCCNurbsSurface.boundary" title="compas_occ.geometry.OCCNurbsSurface.boundary"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundary</span></code></a>()</p></td>
 <td><p>Compute the boundary curves of the surface.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsSurface.closest_point.html#compas_occ.geometry.OCCNurbsSurface.closest_point" title="compas_occ.geometry.OCCNurbsSurface.closest_point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">closest_point</span></code></a>(point[, distance])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsSurface.closest_point.html#compas_occ.geometry.OCCNurbsSurface.closest_point" title="compas_occ.geometry.OCCNurbsSurface.closest_point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">closest_point</span></code></a>(point[, distance, parameter])</p></td>
 <td><p>Compute the closest point on the curve to a given point.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsSurface.copy.html#compas_occ.geometry.OCCNurbsSurface.copy" title="compas_occ.geometry.OCCNurbsSurface.copy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code></a>()</p></td>
