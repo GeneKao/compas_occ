@@ -101,7 +101,7 @@
 <h1>OCCNurbsCurve.fair</h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="compas_occ.geometry.OCCNurbsCurve.fair">
-<span class="sig-prename descclassname"><span class="pre">OCCNurbsCurve.</span></span><span class="sig-name descname"><span class="pre">fair</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/curves/nurbs.py#L494"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<span class="sig-prename descclassname"><span class="pre">OCCNurbsCurve.</span></span><span class="sig-name descname"><span class="pre">fair</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/curves/nurbs.py#L499"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd></dd></dl>
 
 </section>
@@ -255,6 +255,8 @@
   if (url) {
     $.get(url, res=>{
       var lines = res.match(/[^\r\n]+/g);
+      lines.sort( (a, b) => a.localeCompare(b, undefined, { numeric:true }) );
+      lines.reverse();
       lines.forEach(version => {
         $("#doc_version_list").append("<a class=\"dropdown-item\" href=\""+ docs_site + version + "\">" + version + "</a>");
       });

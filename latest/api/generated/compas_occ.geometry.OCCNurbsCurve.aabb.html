@@ -19,7 +19,7 @@
   <link rel="stylesheet" type="text/css" href="../../_static/css/compas-reference.css" />
 
   
-    <link rel="next" title="OCCNurbsCurve.closest_point" href="compas_occ.geometry.OCCNurbsCurve.closest_point.html" />
+    <link rel="next" title="OCCNurbsCurve.closest_parameters_curve" href="compas_occ.geometry.OCCNurbsCurve.closest_parameters_curve.html" />
   
 
   
@@ -101,7 +101,7 @@
 <h1>OCCNurbsCurve.aabb</h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="compas_occ.geometry.OCCNurbsCurve.aabb">
-<span class="sig-prename descclassname"><span class="pre">OCCNurbsCurve.</span></span><span class="sig-name descname"><span class="pre">aabb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.Box.html#compas.geometry.Box" title="(in COMPAS v1.7)"><span class="pre">compas.geometry.shapes.box.Box</span></a></span></span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/curves/nurbs.py#L602"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<span class="sig-prename descclassname"><span class="pre">OCCNurbsCurve.</span></span><span class="sig-name descname"><span class="pre">aabb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.Box.html#compas.geometry.Box" title="(in COMPAS v1.12)"><span class="pre">compas.geometry.shapes.box.Box</span></a></span></span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/curves/nurbs.py#L647"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Compute the axis aligned bounding box of the curve.</p>
 </dd></dl>
 
@@ -170,10 +170,10 @@
       
 
       
-        <a href="compas_occ.geometry.OCCNurbsCurve.closest_point.html" title="OCCNurbsCurve.closest_point" class="nav-link footer-link float-end text-right d-flex w-50" rel="next">
+        <a href="compas_occ.geometry.OCCNurbsCurve.closest_parameters_curve.html" title="OCCNurbsCurve.closest_parameters_curve" class="nav-link footer-link float-end text-right d-flex w-50" rel="next">
           <div class="nav-title footer-link flex-grow-1 align-self-center">
             <div class="nav-direction small font-weight-light">Next</div>
-            OCCNurbsCurve.closest_point
+            OCCNurbsCurve.closest_parameters_curve
           </div>
           <div class="nav-button p-2 m-2"><i class="fas fa-arrow-right"></i></div>
         </a>
@@ -256,6 +256,8 @@
   if (url) {
     $.get(url, res=>{
       var lines = res.match(/[^\r\n]+/g);
+      lines.sort( (a, b) => a.localeCompare(b, undefined, { numeric:true }) );
+      lines.reverse();
       lines.forEach(version => {
         $("#doc_version_list").append("<a class=\"dropdown-item\" href=\""+ docs_site + version + "\">" + version + "</a>");
       });

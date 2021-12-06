@@ -99,7 +99,7 @@
 <h1>compas_vector_to_occ_direction</h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="compas_occ.conversions.compas_vector_to_occ_direction">
-<span class="sig-prename descclassname"><span class="pre">compas_occ.conversions.</span></span><span class="sig-name descname"><span class="pre">compas_vector_to_occ_direction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.Vector.html#compas.geometry.Vector" title="(in COMPAS v1.7)"><span class="pre">compas.geometry.primitives.vector.Vector</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">OCC.Core.gp.gp_Dir</span></span></span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/conversions/primitives.py#L33"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<span class="sig-prename descclassname"><span class="pre">compas_occ.conversions.</span></span><span class="sig-name descname"><span class="pre">compas_vector_to_occ_direction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.Vector.html#compas.geometry.Vector" title="(in COMPAS v1.12)"><span class="pre">compas.geometry.primitives.vector.Vector</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">OCC.Core.gp.gp_Dir</span></span></span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/conversions/primitives.py#L33"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Convert a COMPAS vector to an OCC direction.</p>
 </dd></dl>
 
@@ -254,6 +254,8 @@
   if (url) {
     $.get(url, res=>{
       var lines = res.match(/[^\r\n]+/g);
+      lines.sort( (a, b) => a.localeCompare(b, undefined, { numeric:true }) );
+      lines.reverse();
       lines.forEach(version => {
         $("#doc_version_list").append("<a class=\"dropdown-item\" href=\""+ docs_site + version + "\">" + version + "</a>");
       });

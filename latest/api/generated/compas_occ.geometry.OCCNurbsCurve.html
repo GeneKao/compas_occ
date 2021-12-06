@@ -99,8 +99,8 @@
 <h1>OCCNurbsCurve</h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="compas_occ.geometry.OCCNurbsCurve">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">compas_occ.geometry.</span></span><span class="sig-name descname"><span class="pre">OCCNurbsCurve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/curves/nurbs.py#L64"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">compas.geometry.curves.nurbs.NurbsCurve</span></code></p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">compas_occ.geometry.</span></span><span class="sig-name descname"><span class="pre">OCCNurbsCurve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/curves/nurbs.py#L65"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.NurbsCurve.html#compas.geometry.NurbsCurve" title="(in COMPAS v1.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas.geometry.curves.nurbs.NurbsCurve</span></code></a></p>
 <p>Class representing a NURBS curve based on the BSplineCurve of the OCC geometry kernel.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -146,8 +146,14 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.aabb.html#compas_occ.geometry.OCCNurbsCurve.aabb" title="compas_occ.geometry.OCCNurbsCurve.aabb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aabb</span></code></a>([precision])</p></td>
 <td><p>Compute the axis aligned bounding box of the curve.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.closest_point.html#compas_occ.geometry.OCCNurbsCurve.closest_point" title="compas_occ.geometry.OCCNurbsCurve.closest_point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">closest_point</span></code></a>(point[, return_parameter])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.closest_parameters_curve.html#compas_occ.geometry.OCCNurbsCurve.closest_parameters_curve" title="compas_occ.geometry.OCCNurbsCurve.closest_parameters_curve"><code class="xref py py-obj docutils literal notranslate"><span class="pre">closest_parameters_curve</span></code></a>(curve[, ...])</p></td>
+<td><p>Computes the curve parameters where the curve is the closest to another given curve.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.closest_point.html#compas_occ.geometry.OCCNurbsCurve.closest_point" title="compas_occ.geometry.OCCNurbsCurve.closest_point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">closest_point</span></code></a>(point[, return_parameter])</p></td>
 <td><p>Compute the closest point on the curve to a given point.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.closest_points_curve.html#compas_occ.geometry.OCCNurbsCurve.closest_points_curve" title="compas_occ.geometry.OCCNurbsCurve.closest_points_curve"><code class="xref py py-obj docutils literal notranslate"><span class="pre">closest_points_curve</span></code></a>(curve[, return_distance])</p></td>
+<td><p>Computes the points on curves where the curve is the closest to another given curve.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.copy.html#compas_occ.geometry.OCCNurbsCurve.copy" title="compas_occ.geometry.OCCNurbsCurve.copy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code></a>()</p></td>
 <td><p>Make an independent copy of the current curve.</p></td>
@@ -421,6 +427,8 @@
   if (url) {
     $.get(url, res=>{
       var lines = res.match(/[^\r\n]+/g);
+      lines.sort( (a, b) => a.localeCompare(b, undefined, { numeric:true }) );
+      lines.reverse();
       lines.forEach(version => {
         $("#doc_version_list").append("<a class=\"dropdown-item\" href=\""+ docs_site + version + "\">" + version + "</a>");
       });

@@ -100,7 +100,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="compas_occ.geometry.OCCNurbsSurface">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">compas_occ.geometry.</span></span><span class="sig-name descname"><span class="pre">OCCNurbsSurface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/surfaces/nurbs.py#L91"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">compas.geometry.surfaces.nurbs.NurbsSurface</span></code></p>
+<dd><p>Bases: <a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.NurbsSurface.html#compas.geometry.NurbsSurface" title="(in COMPAS v1.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas.geometry.surfaces.nurbs.NurbsSurface</span></code></a></p>
 <p>Class representing a NURBS surface based on the BSplineSurface of the OCC geometry kernel.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
@@ -387,6 +387,8 @@
   if (url) {
     $.get(url, res=>{
       var lines = res.match(/[^\r\n]+/g);
+      lines.sort( (a, b) => a.localeCompare(b, undefined, { numeric:true }) );
+      lines.reverse();
       lines.forEach(version => {
         $("#doc_version_list").append("<a class=\"dropdown-item\" href=\""+ docs_site + version + "\">" + version + "</a>");
       });

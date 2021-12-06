@@ -141,12 +141,16 @@
   <h2>C</h2>
   <table class=""><tr>
     <td><ul>
+        <li><a href="api/generated/compas_occ.geometry.OCCNurbsCurve.closest_parameters_curve.html#compas_occ.geometry.OCCNurbsCurve.closest_parameters_curve">closest_parameters_curve() (compas_occ.geometry.OCCNurbsCurve method)</a>
+</li>
         <li><a href="api/generated/compas_occ.geometry.OCCNurbsCurve.closest_point.html#compas_occ.geometry.OCCNurbsCurve.closest_point">closest_point() (compas_occ.geometry.OCCNurbsCurve method)</a>
 
         <ul>
           <li><a href="api/generated/compas_occ.geometry.OCCNurbsSurface.closest_point.html#compas_occ.geometry.OCCNurbsSurface.closest_point">(compas_occ.geometry.OCCNurbsSurface method)</a>
 </li>
         </ul></li>
+        <li><a href="api/generated/compas_occ.geometry.OCCNurbsCurve.closest_points_curve.html#compas_occ.geometry.OCCNurbsCurve.closest_points_curve">closest_points_curve() (compas_occ.geometry.OCCNurbsCurve method)</a>
+</li>
         <li><a href="api/generated/compas_occ.conversions.compas_frame_from_occ_position.html#compas_occ.conversions.compas_frame_from_occ_position">compas_frame_from_occ_position() (in module compas_occ.conversions)</a>
 </li>
         <li><a href="api/generated/compas_occ.conversions.compas_line_to_occ_line.html#compas_occ.conversions.compas_line_to_occ_line">compas_line_to_occ_line() (in module compas_occ.conversions)</a>
@@ -181,10 +185,10 @@
           <li><a href="api/compas_occ.geometry.html#module-compas_occ.geometry">module</a>
 </li>
         </ul></li>
-        <li><a href="api/generated/compas_occ.conversions.compas_point_from_occ_point.html#compas_occ.conversions.compas_point_from_occ_point">compas_point_from_occ_point() (in module compas_occ.conversions)</a>
-</li>
     </ul></td>
     <td><ul>
+        <li><a href="api/generated/compas_occ.conversions.compas_point_from_occ_point.html#compas_occ.conversions.compas_point_from_occ_point">compas_point_from_occ_point() (in module compas_occ.conversions)</a>
+</li>
         <li><a href="api/generated/compas_occ.conversions.compas_point_to_occ_point.html#compas_occ.conversions.compas_point_to_occ_point">compas_point_to_occ_point() (in module compas_occ.conversions)</a>
 </li>
         <li><a href="api/generated/compas_occ.conversions.compas_quadmesh_to_occ_shell.html#compas_occ.conversions.compas_quadmesh_to_occ_shell">compas_quadmesh_to_occ_shell() (in module compas_occ.conversions)</a>
@@ -752,6 +756,8 @@
   if (url) {
     $.get(url, res=>{
       var lines = res.match(/[^\r\n]+/g);
+      lines.sort( (a, b) => a.localeCompare(b, undefined, { numeric:true }) );
+      lines.reverse();
       lines.forEach(version => {
         $("#doc_version_list").append("<a class=\"dropdown-item\" href=\""+ docs_site + version + "\">" + version + "</a>");
       });

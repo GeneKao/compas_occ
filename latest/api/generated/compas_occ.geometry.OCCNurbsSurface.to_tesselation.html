@@ -101,7 +101,7 @@
 <h1>OCCNurbsSurface.to_tesselation</h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="compas_occ.geometry.OCCNurbsSurface.to_tesselation">
-<span class="sig-prename descclassname"><span class="pre">OCCNurbsSurface.</span></span><span class="sig-name descname"><span class="pre">to_tesselation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">compas.datastructures.mesh.mesh.Mesh</span></span></span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/surfaces/nurbs.py#L391"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<span class="sig-prename descclassname"><span class="pre">OCCNurbsSurface.</span></span><span class="sig-name descname"><span class="pre">to_tesselation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.datastructures.Mesh.html#compas.datastructures.Mesh" title="(in COMPAS v1.12)"><span class="pre">compas.datastructures.mesh.mesh.Mesh</span></a></span></span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/surfaces/nurbs.py#L391"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Convert the surface to a triangle mesh.</p>
 </dd></dl>
 
@@ -256,6 +256,8 @@
   if (url) {
     $.get(url, res=>{
       var lines = res.match(/[^\r\n]+/g);
+      lines.sort( (a, b) => a.localeCompare(b, undefined, { numeric:true }) );
+      lines.reverse();
       lines.forEach(version => {
         $("#doc_version_list").append("<a class=\"dropdown-item\" href=\""+ docs_site + version + "\">" + version + "</a>");
       });

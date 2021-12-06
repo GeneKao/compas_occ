@@ -168,6 +168,7 @@
 <li class="nav-item"><a class="nav-link reference internal" href="brep_from_booleans.html">BRep Shape From Booleans</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="brep_from_corners.html">BRep From Corners</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="brep_from_mesh.html">BRep From Mesh</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="curve_closest_parameters_curve.html">Curve Closest Parameters Curve</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="curve_closest_point.html">Curve Closest Point</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="curve_comparison1.html">Curve Comparison 1</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="curve_comparison2.html">Curve Comparison 2</a></li>
@@ -310,6 +311,8 @@
   if (url) {
     $.get(url, res=>{
       var lines = res.match(/[^\r\n]+/g);
+      lines.sort( (a, b) => a.localeCompare(b, undefined, { numeric:true }) );
+      lines.reverse();
       lines.forEach(version => {
         $("#doc_version_list").append("<a class=\"dropdown-item\" href=\""+ docs_site + version + "\">" + version + "</a>");
       });
