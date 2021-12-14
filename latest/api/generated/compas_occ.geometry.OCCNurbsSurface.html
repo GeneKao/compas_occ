@@ -100,13 +100,13 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="compas_occ.geometry.OCCNurbsSurface">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">compas_occ.geometry.</span></span><span class="sig-name descname"><span class="pre">OCCNurbsSurface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/surfaces/nurbs.py#L91"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
-<dd><p>Bases: <a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.NurbsSurface.html#compas.geometry.NurbsSurface" title="(in COMPAS v1.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas.geometry.surfaces.nurbs.NurbsSurface</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.NurbsSurface.html#compas.geometry.NurbsSurface" title="(in COMPAS v1.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas.geometry.surfaces.nurbs.NurbsSurface</span></code></a></p>
 <p>Class representing a NURBS surface based on the BSplineSurface of the OCC geometry kernel.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Attributes</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>points</strong> (<em>List[Point]</em>) – The control points of the surface.</p></li>
-<li><p><strong>weights</strong> (<em>List[float]</em>) – The weights of the control points.</p></li>
+<li><p><strong>points</strong> (<em>List[List[Point]]</em>) – The control points of the surface.</p></li>
+<li><p><strong>weights</strong> (<em>List[List[float]]</em>) – The weights of the control points.</p></li>
 <li><p><strong>u_knots</strong> (<em>List[float]</em>) – The knot vector, in the U direction, without duplicates.</p></li>
 <li><p><strong>v_knots</strong> (<em>List[float]</em>) – The knot vector, in the V direction, without duplicates.</p></li>
 <li><p><strong>u_mults</strong> (<em>List[int]</em>) – The multiplicities of the knots in the knot vector of the U direction.</p></li>
