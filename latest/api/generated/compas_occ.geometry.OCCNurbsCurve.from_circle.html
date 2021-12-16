@@ -19,7 +19,7 @@
   <link rel="stylesheet" type="text/css" href="../../_static/css/compas-reference.css" />
 
   
-    <link rel="next" title="OCCNurbsCurve.from_data" href="compas_occ.geometry.OCCNurbsCurve.from_data.html" />
+    <link rel="next" title="OCCNurbsCurve.from_edge" href="compas_occ.geometry.OCCNurbsCurve.from_edge.html" />
   
 
   
@@ -50,7 +50,7 @@
         <li class="nav-item nav-versions dropdown">
           <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            0.3.1
+            0.3.3
           </a>
           <div id="doc_version_list" class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions"></div>
         </li>
@@ -101,13 +101,14 @@
 <h1>OCCNurbsCurve.from_circle</h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="compas_occ.geometry.OCCNurbsCurve.from_circle">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">OCCNurbsCurve.</span></span><span class="sig-name descname"><span class="pre">from_circle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">circle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.Circle.html#compas.geometry.Circle" title="(in COMPAS v1.13)"><span class="pre">compas.geometry.primitives.circle.Circle</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.html#compas_occ.geometry.OCCNurbsCurve" title="compas_occ.geometry.curves.nurbs.OCCNurbsCurve"><span class="pre">compas_occ.geometry.curves.nurbs.OCCNurbsCurve</span></a></span></span></dt>
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">OCCNurbsCurve.</span></span><span class="sig-name descname"><span class="pre">from_circle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">circle</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Construct a NURBS curve from a circle.</p>
-<p>This construction method is similar to the method <code class="docutils literal notranslate"><span class="pre">CreateFromCircle</span></code> of the Rhino API for NURBS curves <a class="footnote-reference brackets" href="#id2" id="id1">1</a>.</p>
-<p class="rubric">References</p>
-<dl class="footnote brackets">
-<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p><a class="reference external" href="https://developer.rhino3d.com/api/RhinoCommon/html/Overload_Rhino_Geometry_NurbsCurve_CreateFromCircle.htm">https://developer.rhino3d.com/api/RhinoCommon/html/Overload_Rhino_Geometry_NurbsCurve_CreateFromCircle.htm</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>circle</strong> (<a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.Circle.html#compas.geometry.Circle" title="(in COMPAS v1.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas.geometry.Circle</span></code></a>) – The circle geometry.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.html#compas_occ.geometry.OCCNurbsCurve" title="compas_occ.geometry.OCCNurbsCurve"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCCNurbsCurve</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -177,10 +178,10 @@
       
 
       
-        <a href="compas_occ.geometry.OCCNurbsCurve.from_data.html" title="OCCNurbsCurve.from_data" class="nav-link footer-link float-end text-right d-flex w-50" rel="next">
+        <a href="compas_occ.geometry.OCCNurbsCurve.from_edge.html" title="OCCNurbsCurve.from_edge" class="nav-link footer-link float-end text-right d-flex w-50" rel="next">
           <div class="nav-title footer-link flex-grow-1 align-self-center">
             <div class="nav-direction small font-weight-light">Next</div>
-            OCCNurbsCurve.from_data
+            OCCNurbsCurve.from_edge
           </div>
           <div class="nav-button p-2 m-2"><i class="fas fa-arrow-right"></i></div>
         </a>
@@ -223,7 +224,7 @@
   <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
   URL_ROOT          : '',
-  VERSION           : '0.3.1',
+  VERSION           : '0.3.3',
   COLLAPSE_INDEX    : false,
   FILE_SUFFIX       : '.html',
   HAS_SOURCE        : 'false',

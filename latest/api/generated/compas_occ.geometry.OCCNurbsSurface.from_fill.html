@@ -19,7 +19,7 @@
   <link rel="stylesheet" type="text/css" href="../../_static/css/compas-reference.css" />
 
   
-    <link rel="next" title="OCCNurbsSurface.from_json" href="compas_occ.geometry.OCCNurbsSurface.from_json.html" />
+    <link rel="next" title="OCCNurbsSurface.from_occ" href="compas_occ.geometry.OCCNurbsSurface.from_occ.html" />
   
 
   
@@ -50,7 +50,7 @@
         <li class="nav-item nav-versions dropdown">
           <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            0.3.1
+            0.3.3
           </a>
           <div id="doc_version_list" class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions"></div>
         </li>
@@ -101,8 +101,19 @@
 <h1>OCCNurbsSurface.from_fill</h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="compas_occ.geometry.OCCNurbsSurface.from_fill">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">OCCNurbsSurface.</span></span><span class="sig-name descname"><span class="pre">from_fill</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">curve1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.html#compas_occ.geometry.OCCNurbsCurve" title="compas_occ.geometry.curves.nurbs.OCCNurbsCurve"><span class="pre">compas_occ.geometry.curves.nurbs.OCCNurbsCurve</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">curve2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.html#compas_occ.geometry.OCCNurbsCurve" title="compas_occ.geometry.curves.nurbs.OCCNurbsCurve"><span class="pre">compas_occ.geometry.curves.nurbs.OCCNurbsCurve</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="compas_occ.geometry.OCCNurbsSurface.html#compas_occ.geometry.OCCNurbsSurface" title="compas_occ.geometry.surfaces.nurbs.OCCNurbsSurface"><span class="pre">compas_occ.geometry.surfaces.nurbs.OCCNurbsSurface</span></a></span></span></dt>
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">OCCNurbsSurface.</span></span><span class="sig-name descname"><span class="pre">from_fill</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">curve1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curve2</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Construct a NURBS surface from the infill between two NURBS curves.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>curve1</strong> (<a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.NurbsCurve.html#compas.geometry.NurbsCurve" title="(in COMPAS v1.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas.geometry.NurbsCurve</span></code></a>)</p></li>
+<li><p><strong>curve2</strong> (<a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.NurbsCurve.html#compas.geometry.NurbsCurve" title="(in COMPAS v1.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas.geometry.NurbsCurve</span></code></a>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsSurface.html#compas_occ.geometry.OCCNurbsSurface" title="compas_occ.geometry.OCCNurbsSurface"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCCNurbsSurface</span></code></a></p>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -170,10 +181,10 @@
       
 
       
-        <a href="compas_occ.geometry.OCCNurbsSurface.from_json.html" title="OCCNurbsSurface.from_json" class="nav-link footer-link float-end text-right d-flex w-50" rel="next">
+        <a href="compas_occ.geometry.OCCNurbsSurface.from_occ.html" title="OCCNurbsSurface.from_occ" class="nav-link footer-link float-end text-right d-flex w-50" rel="next">
           <div class="nav-title footer-link flex-grow-1 align-self-center">
             <div class="nav-direction small font-weight-light">Next</div>
-            OCCNurbsSurface.from_json
+            OCCNurbsSurface.from_occ
           </div>
           <div class="nav-button p-2 m-2"><i class="fas fa-arrow-right"></i></div>
         </a>
@@ -216,7 +227,7 @@
   <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
   URL_ROOT          : '',
-  VERSION           : '0.3.1',
+  VERSION           : '0.3.3',
   COLLAPSE_INDEX    : false,
   FILE_SUFFIX       : '.html',
   HAS_SOURCE        : 'false',

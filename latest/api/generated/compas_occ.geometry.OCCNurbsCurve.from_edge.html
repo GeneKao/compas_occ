@@ -23,7 +23,7 @@
   
 
   
-    <link rel="prev" title="OCCNurbsCurve.from_data" href="compas_occ.geometry.OCCNurbsCurve.from_data.html" />
+    <link rel="prev" title="OCCNurbsCurve.from_circle" href="compas_occ.geometry.OCCNurbsCurve.from_circle.html" />
   
 
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
@@ -50,7 +50,7 @@
         <li class="nav-item nav-versions dropdown">
           <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            0.3.1
+            0.3.3
           </a>
           <div id="doc_version_list" class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions"></div>
         </li>
@@ -101,8 +101,16 @@
 <h1>OCCNurbsCurve.from_edge</h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="compas_occ.geometry.OCCNurbsCurve.from_edge">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">OCCNurbsCurve.</span></span><span class="sig-name descname"><span class="pre">from_edge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">OCC.Core.TopoDS.TopoDS_Edge</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.html#compas_occ.geometry.OCCNurbsCurve" title="compas_occ.geometry.curves.nurbs.OCCNurbsCurve"><span class="pre">compas_occ.geometry.curves.nurbs.OCCNurbsCurve</span></a></span></span></dt>
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">OCCNurbsCurve.</span></span><span class="sig-name descname"><span class="pre">from_edge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Construct a NURBS curve from an existing OCC TopoDS_Edge.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>edge</strong> (<em>TopoDS_Edge</em>) – The OCC edge containing the curve information.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.html#compas_occ.geometry.OCCNurbsCurve" title="compas_occ.geometry.OCCNurbsCurve"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCCNurbsCurve</span></code></a></p>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -160,11 +168,11 @@
   <footer class="compas-footer">
     <nav class="nav p-2">
       
-        <a href="compas_occ.geometry.OCCNurbsCurve.from_data.html" title="OCCNurbsCurve.from_data" class="nav-link footer-link float-start text-left d-flex w-50" rel="prev">
+        <a href="compas_occ.geometry.OCCNurbsCurve.from_circle.html" title="OCCNurbsCurve.from_circle" class="nav-link footer-link float-start text-left d-flex w-50" rel="prev">
           <div class="nav-button p-2 m-2"><i class="fas fa-arrow-left"></i></div>
           <div class="nav-title flex-grow-1 align-self-center">
             <div class="nav-direction small font-weight-light">Previous</div>
-            OCCNurbsCurve.from_data
+            OCCNurbsCurve.from_circle
           </div>
         </a>
       
@@ -216,7 +224,7 @@
   <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
   URL_ROOT          : '',
-  VERSION           : '0.3.1',
+  VERSION           : '0.3.3',
   COLLAPSE_INDEX    : false,
   FILE_SUFFIX       : '.html',
   HAS_SOURCE        : 'false',

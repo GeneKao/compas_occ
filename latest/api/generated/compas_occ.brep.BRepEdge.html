@@ -50,7 +50,7 @@
         <li class="nav-item nav-versions dropdown">
           <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            0.3.1
+            0.3.3
           </a>
           <div id="doc_version_list" class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions"></div>
         </li>
@@ -123,6 +123,60 @@
 </ul>
 </dd>
 </dl>
+<p class="rubric">Attributes</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptor</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">curve</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">edge</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">first_vertex</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_bezier</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_bspline</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_circle</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_ellipse</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_hyperbola</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_line</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_other</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_parabola</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">last_vertex</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">vertices</span></code></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
 <p class="rubric">Methods</p>
 <table class="longtable docutils align-default">
 <colgroup>
@@ -130,25 +184,25 @@
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.brep.BRepEdge.to_bezier.html#compas_occ.brep.BRepEdge.to_bezier" title="compas_occ.brep.BRepEdge.to_bezier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_bezier</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.brep.BRepEdge.to_bezier.html#compas_occ.brep.BRepEdge.to_bezier" title="compas_occ.brep.BRepEdge.to_bezier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_bezier</span></code></a></p></td>
 <td><p>Convert the edge geometry to a bezier curve.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.brep.BRepEdge.to_bspline.html#compas_occ.brep.BRepEdge.to_bspline" title="compas_occ.brep.BRepEdge.to_bspline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_bspline</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.brep.BRepEdge.to_bspline.html#compas_occ.brep.BRepEdge.to_bspline" title="compas_occ.brep.BRepEdge.to_bspline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_bspline</span></code></a></p></td>
 <td><p>Convert the edge geometry to a bspline.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.brep.BRepEdge.to_circle.html#compas_occ.brep.BRepEdge.to_circle" title="compas_occ.brep.BRepEdge.to_circle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_circle</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.brep.BRepEdge.to_circle.html#compas_occ.brep.BRepEdge.to_circle" title="compas_occ.brep.BRepEdge.to_circle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_circle</span></code></a></p></td>
 <td><p>Convert the edge geometry to a circle.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.brep.BRepEdge.to_ellipse.html#compas_occ.brep.BRepEdge.to_ellipse" title="compas_occ.brep.BRepEdge.to_ellipse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_ellipse</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.brep.BRepEdge.to_ellipse.html#compas_occ.brep.BRepEdge.to_ellipse" title="compas_occ.brep.BRepEdge.to_ellipse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_ellipse</span></code></a></p></td>
 <td><p>Convert the edge geometry to an ellipse.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.brep.BRepEdge.to_hyperbola.html#compas_occ.brep.BRepEdge.to_hyperbola" title="compas_occ.brep.BRepEdge.to_hyperbola"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_hyperbola</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.brep.BRepEdge.to_hyperbola.html#compas_occ.brep.BRepEdge.to_hyperbola" title="compas_occ.brep.BRepEdge.to_hyperbola"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_hyperbola</span></code></a></p></td>
 <td><p>Convert the edge geometry to a hyperbola.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.brep.BRepEdge.to_line.html#compas_occ.brep.BRepEdge.to_line" title="compas_occ.brep.BRepEdge.to_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_line</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="compas_occ.brep.BRepEdge.to_line.html#compas_occ.brep.BRepEdge.to_line" title="compas_occ.brep.BRepEdge.to_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_line</span></code></a></p></td>
 <td><p>Convert the edge geometry to a line.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.brep.BRepEdge.to_parabola.html#compas_occ.brep.BRepEdge.to_parabola" title="compas_occ.brep.BRepEdge.to_parabola"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_parabola</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.brep.BRepEdge.to_parabola.html#compas_occ.brep.BRepEdge.to_parabola" title="compas_occ.brep.BRepEdge.to_parabola"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_parabola</span></code></a></p></td>
 <td><p>Convert the edge geometry to a parabola.</p></td>
 </tr>
 </tbody>
@@ -266,7 +320,7 @@
   <script type="text/javascript">
   var DOCUMENTATION_OPTIONS = {
   URL_ROOT          : '',
-  VERSION           : '0.3.1',
+  VERSION           : '0.3.3',
   COLLAPSE_INDEX    : false,
   FILE_SUFFIX       : '.html',
   HAS_SOURCE        : 'false',
