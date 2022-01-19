@@ -99,9 +99,24 @@
 <h1>BRepFace</h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="compas_occ.brep.BRepFace">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">compas_occ.brep.</span></span><span class="sig-name descname"><span class="pre">BRepFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">OCC.Core.TopoDS.TopoDS_Face</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/brep/brepface.py#L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">compas_occ.brep.</span></span><span class="sig-name descname"><span class="pre">BRepFace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/brep/brepface.py#L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Class representing a face in the BRep of a geometric shape.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>face</strong> (<em>TopoDS_Face</em>) – An OCC BRep face.</p>
+</dd>
+<dt class="field-even">Attributes</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>face</strong> (<em>TopoDS_Face</em>) – The OCC BRep face.</p></li>
+<li><p><strong>vertices</strong> (list[<a class="reference internal" href="compas_occ.brep.BRepVertex.html#compas_occ.brep.BRepVertex" title="compas_occ.brep.BRepVertex"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas_occ.brep.BRepVertex</span></code></a>], read-only) – List of BRep vertices.</p></li>
+<li><p><strong>edges</strong> (list[<a class="reference internal" href="compas_occ.brep.BRepEdge.html#compas_occ.brep.BRepEdge" title="compas_occ.brep.BRepEdge"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas_occ.brep.BRepEdge</span></code></a>], read-only) – List of BRep edges.</p></li>
+<li><p><strong>loops</strong> (list[<a class="reference internal" href="compas_occ.brep.BRepLoop.html#compas_occ.brep.BRepLoop" title="compas_occ.brep.BRepLoop"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas_occ.brep.BRepLoop</span></code></a>], read-only) – List of BRep loops.</p></li>
+<li><p><strong>adaptor</strong> (<em>BRepAdaptor_Surface</em>) – Adaptor for extracting surface geometry from the BRep face.</p></li>
+<li><p><strong>surface</strong> (<em>GeomAdaptor_Surface</em>) – Surface geometry from the adaptor.</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 </section>

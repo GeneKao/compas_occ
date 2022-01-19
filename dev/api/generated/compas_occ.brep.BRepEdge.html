@@ -99,7 +99,7 @@
 <h1>BRepEdge</h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="compas_occ.brep.BRepEdge">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">compas_occ.brep.</span></span><span class="sig-name descname"><span class="pre">BRepEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">OCC.Core.TopoDS.TopoDS_Edge</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/brep/brepedge.py#L24"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">compas_occ.brep.</span></span><span class="sig-name descname"><span class="pre">BRepEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/brep/brepedge.py#L24"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Class representing an edge in the BRep of a geometric shape.</p>
 <dl class="field-list simple">
@@ -118,8 +118,8 @@
 <li><p><strong>vertices</strong> (list of <a class="reference internal" href="compas_occ.brep.BRepVertex.html#compas_occ.brep.BRepVertex" title="compas_occ.brep.BRepVertex"><code class="xref py py-class docutils literal notranslate"><span class="pre">BRepVertex</span></code></a>, read-only) – The topological vertices of the edge.</p></li>
 <li><p><strong>first_vertex</strong> (<a class="reference internal" href="compas_occ.brep.BRepVertex.html#compas_occ.brep.BRepVertex" title="compas_occ.brep.BRepVertex"><code class="xref py py-class docutils literal notranslate"><span class="pre">BRepVertex</span></code></a>, read-only) – The first vertex with forward orientation.</p></li>
 <li><p><strong>last_vertex</strong> (<a class="reference internal" href="compas_occ.brep.BRepVertex.html#compas_occ.brep.BRepVertex" title="compas_occ.brep.BRepVertex"><code class="xref py py-class docutils literal notranslate"><span class="pre">BRepVertex</span></code></a>, read-only) – The first vertex with reversed orientation.</p></li>
-<li><p><strong>adaptor</strong></p></li>
-<li><p><strong>curve</strong></p></li>
+<li><p><strong>adaptor</strong> (<em>BRepAdaptor_Curve</em>) – Edge adaptor for extracting curve geometry.</p></li>
+<li><p><strong>curve</strong> (<em>GeomAdaptor_Curve</em>) – Curve geometry from the edge adaptor.</p></li>
 </ul>
 </dd>
 </dl>

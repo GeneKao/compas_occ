@@ -106,6 +106,32 @@
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>name</strong> (<em>str, optional</em>) – The name of the curve.</p>
 </dd>
+<dt class="field-even">Attributes</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>occ_curve</strong> (<em>Geom_BSplineCurve</em>) – The underlying OCC curve.</p></li>
+<li><p><strong>occ_shape</strong> (<em>TopoDS_Shape, read-only</em>) – The underlying OCC curve embedded in an edge and converted to a shape.</p></li>
+<li><p><strong>occ_edge</strong> (<em>TopoDS_Edge, read-only</em>) – The underlying OCC curve embedded in an edge.</p></li>
+<li><p><strong>occ_points</strong> (<em>TColgp_Array1OfPnt, read-only</em>) – The control points of the curve.</p></li>
+<li><p><strong>occ_weights</strong> (<em>TColStd_Array1OfReal, read-only</em>) – The weights of the control points of the curve.</p></li>
+<li><p><strong>occ_knots</strong> (<em>TColStd_Array1OfReal, read-only</em>) – The knots of the curve, without multiplicities.</p></li>
+<li><p><strong>occ_knotsequence</strong> (<em>TColStd_Array1OfReal, read-only</em>) – The full vector of knots of the curve.</p></li>
+<li><p><strong>occ_multiplicities</strong> (<em>TColStd_Array1OfInteger, read-only</em>) – The multiplicities of the knots of the curve.</p></li>
+<li><p><strong>points</strong> (list[<a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.Point.html#compas.geometry.Point" title="(in COMPAS v1.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas.geometry.Point</span></code></a>], read-only) – The control points of the curve.</p></li>
+<li><p><strong>weights</strong> (<em>list[float], read-only</em>) – The weights of the control points of the curve.</p></li>
+<li><p><strong>knots</strong> (<em>list[float], read-only</em>) – The knots of the curve, without multiplicities.</p></li>
+<li><p><strong>knotsequence</strong> (<em>list[float], read-only</em>) – The full vector of knots of the curve.</p></li>
+<li><p><strong>multiplicities</strong> (<em>list[int], read-only</em>) – The multiplicities of the knots of the curve.</p></li>
+<li><p><strong>degree</strong> (<em>int, read-only</em>) – The degree of the curve.</p></li>
+<li><p><strong>dimension</strong> (<em>int, read-only</em>) – The dimension of the curve.</p></li>
+<li><p><strong>domain</strong> (<em>tuple[float, float], read-only</em>) – The parameter domain of the curve.</p></li>
+<li><p><strong>order</strong> (<em>int, read-only</em>) – The order of the curve (= degree + 1).</p></li>
+<li><p><strong>start</strong> (<a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.Point.html#compas.geometry.Point" title="(in COMPAS v1.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas.geometry.Point</span></code></a>, read-only) – The start point of the curve.</p></li>
+<li><p><strong>end</strong> (<a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.Point.html#compas.geometry.Point" title="(in COMPAS v1.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas.geometry.Point</span></code></a>, read-only) – The end point of the curve.</p></li>
+<li><p><strong>is_closed</strong> (<em>bool, read-only</em>) – Flag indicating that the curve is closed.</p></li>
+<li><p><strong>is_periodic</strong> (<em>bool, read-only</em>) – Flag indicating that the curve is periodic.</p></li>
+<li><p><strong>is_rational</strong> (<em>bool, read-only</em>) – Flag indicating that the curve is rational.</p></li>
+</ul>
+</dd>
 </dl>
 <p class="rubric">Examples</p>
 <p>Curve from points…</p>
@@ -215,10 +241,10 @@
 <td><p>Compute the tangent vector at a point on the curve.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.to_line.html#compas_occ.geometry.OCCNurbsCurve.to_line" title="compas_occ.geometry.OCCNurbsCurve.to_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_line</span></code></a></p></td>
-<td><p></p></td>
+<td><p>Convert the geometry to a line.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.to_polyline.html#compas_occ.geometry.OCCNurbsCurve.to_polyline" title="compas_occ.geometry.OCCNurbsCurve.to_polyline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_polyline</span></code></a></p></td>
-<td><p></p></td>
+<td><p>Convert the geometry to a polyline.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsCurve.to_step.html#compas_occ.geometry.OCCNurbsCurve.to_step" title="compas_occ.geometry.OCCNurbsCurve.to_step"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_step</span></code></a></p></td>
 <td><p>Write the curve geometry to a STP file.</p></td>
