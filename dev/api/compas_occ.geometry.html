@@ -20,7 +20,7 @@
   <link rel="stylesheet" type="text/css" href="../_static/css/compas-reference.css" />
 
   
-  <link rel="next" title="Curve" href="generated/compas_occ.geometry.Curve.html" />
+  <link rel="next" title="OCCCurve" href="generated/compas_occ.geometry.OCCCurve.html" />
   
 
   
@@ -76,7 +76,7 @@
   <div class="container-fluid">
     <div class="row">
       <!-- main -->
-      <main class="col-12 col-md-9 col-xl-7 px-2 px-md-5 pt-2 pb-5 compas-content" role="main">
+      <main class="col-12 col-md-9 col-xl-7 px-4 px-md-5 pt-2 pb-5 compas-content" role="main">
         
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-3 bg-white px-0">
@@ -103,13 +103,16 @@
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas_occ.geometry.Curve.html#compas_occ.geometry.Curve" title="compas_occ.geometry.Curve"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Curve</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas_occ.geometry.OCCCurve.html#compas_occ.geometry.OCCCurve" title="compas_occ.geometry.OCCCurve"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OCCCurve</span></code></a></p></td>
 <td><p>Class representing a general curve object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/compas_occ.geometry.NurbsCurve.html#compas_occ.geometry.NurbsCurve" title="compas_occ.geometry.NurbsCurve"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NurbsCurve</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas_occ.geometry.OCCNurbsCurve.html#compas_occ.geometry.OCCNurbsCurve" title="compas_occ.geometry.OCCNurbsCurve"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OCCNurbsCurve</span></code></a></p></td>
 <td><p>Class representing a NURBS curve based on the BSplineCurve of the OCC geometry kernel.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas_occ.geometry.NurbsSurface.html#compas_occ.geometry.NurbsSurface" title="compas_occ.geometry.NurbsSurface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NurbsSurface</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas_occ.geometry.OCCSurface.html#compas_occ.geometry.OCCSurface" title="compas_occ.geometry.OCCSurface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OCCSurface</span></code></a></p></td>
+<td><p>Class representing a general surface object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas_occ.geometry.OCCNurbsSurface.html#compas_occ.geometry.OCCNurbsSurface" title="compas_occ.geometry.OCCNurbsSurface"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OCCNurbsSurface</span></code></a></p></td>
 <td><p>Class representing a NURBS surface based on the BSplineSurface of the OCC geometry kernel.</p></td>
 </tr>
 </tbody>
@@ -208,10 +211,10 @@
       
 
       
-      <a href="generated/compas_occ.geometry.Curve.html" title="Curve" class="nav-link footer-link float-end text-right d-flex w-50" rel="next">
+      <a href="generated/compas_occ.geometry.OCCCurve.html" title="OCCCurve" class="nav-link footer-link float-end text-right d-flex w-50" rel="next">
         <div class="nav-title footer-link flex-grow-1 align-self-center">
           <div class="nav-direction small font-weight-light">Next</div>
-          Curve
+          OCCCurve
         </div>
         <div class="nav-button p-2 m-2"><i class="fas fa-arrow-right"></i></div>
       </a>
@@ -277,7 +280,7 @@
       hljs.initHighlighting();
       anchors.add();
 
-      new ClipboardJS(".btn", {
+      new ClipboardJS(".btn.copy", {
         target: function(trigger) {
           return trigger.nextElementSibling;
         }

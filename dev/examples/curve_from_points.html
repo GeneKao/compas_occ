@@ -76,7 +76,7 @@
   <div class="container-fluid">
     <div class="row">
       <!-- main -->
-      <main class="col-12 col-md-9 col-xl-7 px-2 px-md-5 pt-2 pb-5 compas-content" role="main">
+      <main class="col-12 col-md-9 col-xl-7 px-4 px-md-5 pt-2 pb-5 compas-content" role="main">
         
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-3 bg-white px-0">
@@ -98,13 +98,13 @@
 </figure>
 <div class="language-python notranslate"><div class="highlight"><pre><button class="btn copy"><i class="far fa-copy"></i></button><code><span></span><span class="kn">from</span> <span class="nn">compas.geometry</span> <span class="kn">import</span> <span class="n">Point</span>
 <span class="kn">from</span> <span class="nn">compas.geometry</span> <span class="kn">import</span> <span class="n">Polyline</span>
-<span class="kn">from</span> <span class="nn">compas_occ.geometry</span> <span class="kn">import</span> <span class="n">NurbsCurve</span>
+<span class="kn">from</span> <span class="nn">compas_occ.geometry</span> <span class="kn">import</span> <span class="n">OCCNurbsCurve</span>
 <span class="kn">from</span> <span class="nn">compas_view2.app</span> <span class="kn">import</span> <span class="n">App</span>
 
 
 <span class="n">points</span> <span class="o">=</span> <span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]</span>
 
-<span class="n">curve</span> <span class="o">=</span> <span class="n">NurbsCurve</span><span class="o">.</span><span class="n">from_points</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
+<span class="n">curve</span> <span class="o">=</span> <span class="n">OCCNurbsCurve</span><span class="o">.</span><span class="n">from_points</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
 
 <span class="c1"># ==============================================================================</span>
 <span class="c1"># Visualisation</span>
@@ -293,7 +293,7 @@ Rational: False
       hljs.initHighlighting();
       anchors.add();
 
-      new ClipboardJS(".btn", {
+      new ClipboardJS(".btn.copy", {
         target: function(trigger) {
           return trigger.nextElementSibling;
         }

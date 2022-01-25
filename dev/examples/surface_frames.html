@@ -76,7 +76,7 @@
   <div class="container-fluid">
     <div class="row">
       <!-- main -->
-      <main class="col-12 col-md-9 col-xl-7 px-2 px-md-5 pt-2 pb-5 compas-content" role="main">
+      <main class="col-12 col-md-9 col-xl-7 px-4 px-md-5 pt-2 pb-5 compas-content" role="main">
         
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-3 bg-white px-0">
@@ -98,7 +98,7 @@
 </figure>
 <div class="language-python notranslate"><div class="highlight"><pre><button class="btn copy"><i class="far fa-copy"></i></button><code><span></span><span class="kn">from</span> <span class="nn">compas.geometry</span> <span class="kn">import</span> <span class="n">Point</span>
 <span class="kn">from</span> <span class="nn">compas.utilities</span> <span class="kn">import</span> <span class="n">meshgrid</span><span class="p">,</span> <span class="n">flatten</span>
-<span class="kn">from</span> <span class="nn">compas_occ.geometry</span> <span class="kn">import</span> <span class="n">NurbsSurface</span>
+<span class="kn">from</span> <span class="nn">compas_occ.geometry</span> <span class="kn">import</span> <span class="n">OCCNurbsSurface</span>
 <span class="kn">from</span> <span class="nn">compas_view2.app</span> <span class="kn">import</span> <span class="n">App</span>
 
 
@@ -109,7 +109,7 @@
     <span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">)],</span>
 <span class="p">]</span>
 
-<span class="n">surface</span> <span class="o">=</span> <span class="n">NurbsSurface</span><span class="o">.</span><span class="n">from_points</span><span class="p">(</span><span class="n">points</span><span class="o">=</span><span class="n">points</span><span class="p">)</span>
+<span class="n">surface</span> <span class="o">=</span> <span class="n">OCCNurbsSurface</span><span class="o">.</span><span class="n">from_points</span><span class="p">(</span><span class="n">points</span><span class="o">=</span><span class="n">points</span><span class="p">)</span>
 
 <span class="c1"># ==============================================================================</span>
 <span class="c1"># Frames</span>
@@ -291,7 +291,7 @@
       hljs.initHighlighting();
       anchors.add();
 
-      new ClipboardJS(".btn", {
+      new ClipboardJS(".btn.copy", {
         target: function(trigger) {
           return trigger.nextElementSibling;
         }
