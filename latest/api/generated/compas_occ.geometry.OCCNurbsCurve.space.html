@@ -20,11 +20,11 @@
   <link rel="stylesheet" type="text/css" href="../../_static/css/compas-reference.css" />
 
   
-  <link rel="next" title="OCCNurbsCurve.tangent_at" href="compas_occ.geometry.OCCNurbsCurve.tangent_at.html" />
+  <link rel="next" title="OCCNurbsCurve.split" href="compas_occ.geometry.OCCNurbsCurve.split.html" />
   
 
   
-  <link rel="prev" title="OCCNurbsCurve.reverse" href="compas_occ.geometry.OCCNurbsCurve.reverse.html" />
+  <link rel="prev" title="OCCNurbsCurve.smooth" href="compas_occ.geometry.OCCNurbsCurve.smooth.html" />
   
 
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
@@ -101,8 +101,16 @@
 <h1>OCCNurbsCurve.space</h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="compas_occ.geometry.OCCNurbsCurve.space">
-<span class="sig-prename descclassname"><span class="pre">OCCNurbsCurve.</span></span><span class="sig-name descname"><span class="pre">space</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/curves/nurbs.py#L399"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<span class="sig-prename descclassname"><span class="pre">OCCNurbsCurve.</span></span><span class="sig-name descname"><span class="pre">space</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/curves/nurbs.py#L330"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Compute evenly spaced parameters over the curve domain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>n</strong> (<em>int, optional</em>) – The number of values in the parameter space.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><em>list[float]</em></p>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -185,20 +193,20 @@
   <footer class="compas-footer">
     <nav class="nav p-2">
       
-      <a href="compas_occ.geometry.OCCNurbsCurve.reverse.html" title="OCCNurbsCurve.reverse" class="nav-link footer-link float-start text-left d-flex w-50" rel="prev">
+      <a href="compas_occ.geometry.OCCNurbsCurve.smooth.html" title="OCCNurbsCurve.smooth" class="nav-link footer-link float-start text-left d-flex w-50" rel="prev">
         <div class="nav-button p-2 m-2"><i class="fas fa-arrow-left"></i></div>
         <div class="nav-title flex-grow-1 align-self-center">
           <div class="nav-direction small font-weight-light">Previous</div>
-          OCCNurbsCurve.reverse
+          OCCNurbsCurve.smooth
         </div>
       </a>
       
 
       
-      <a href="compas_occ.geometry.OCCNurbsCurve.tangent_at.html" title="OCCNurbsCurve.tangent_at" class="nav-link footer-link float-end text-right d-flex w-50" rel="next">
+      <a href="compas_occ.geometry.OCCNurbsCurve.split.html" title="OCCNurbsCurve.split" class="nav-link footer-link float-end text-right d-flex w-50" rel="next">
         <div class="nav-title footer-link flex-grow-1 align-self-center">
           <div class="nav-direction small font-weight-light">Next</div>
-          OCCNurbsCurve.tangent_at
+          OCCNurbsCurve.split
         </div>
         <div class="nav-button p-2 m-2"><i class="fas fa-arrow-right"></i></div>
       </a>

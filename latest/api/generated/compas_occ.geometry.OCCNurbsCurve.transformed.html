@@ -20,7 +20,7 @@
   <link rel="stylesheet" type="text/css" href="../../_static/css/compas-reference.css" />
 
   
-  <link rel="next" title="OCCNurbsCurve.validate_data" href="compas_occ.geometry.OCCNurbsCurve.validate_data.html" />
+  <link rel="next" title="OCCNurbsCurve.trim" href="compas_occ.geometry.OCCNurbsCurve.trim.html" />
   
 
   
@@ -101,8 +101,16 @@
 <h1>OCCNurbsCurve.transformed</h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="compas_occ.geometry.OCCNurbsCurve.transformed">
-<span class="sig-prename descclassname"><span class="pre">OCCNurbsCurve.</span></span><span class="sig-name descname"><span class="pre">transformed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/curves/nurbs.py#L393"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
-<dd><p>Transform a copy of the curve.</p>
+<span class="sig-prename descclassname"><span class="pre">OCCNurbsCurve.</span></span><span class="sig-name descname"><span class="pre">transformed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transformation</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/curves/nurbs.py#L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns a transformed copy of this geometry.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>transformation</strong> (<a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.Transformation.html#compas.geometry.Transformation" title="(in COMPAS v1.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas.geometry.Transformation</span></code></a>) – The transformation used to transform the geometry.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Geometry</span></code> – The transformed geometry.</p>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -195,10 +203,10 @@
       
 
       
-      <a href="compas_occ.geometry.OCCNurbsCurve.validate_data.html" title="OCCNurbsCurve.validate_data" class="nav-link footer-link float-end text-right d-flex w-50" rel="next">
+      <a href="compas_occ.geometry.OCCNurbsCurve.trim.html" title="OCCNurbsCurve.trim" class="nav-link footer-link float-end text-right d-flex w-50" rel="next">
         <div class="nav-title footer-link flex-grow-1 align-self-center">
           <div class="nav-direction small font-weight-light">Next</div>
-          OCCNurbsCurve.validate_data
+          OCCNurbsCurve.trim
         </div>
         <div class="nav-button p-2 m-2"><i class="fas fa-arrow-right"></i></div>
       </a>
