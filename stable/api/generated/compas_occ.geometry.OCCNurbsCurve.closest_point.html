@@ -50,7 +50,7 @@
         <meta id="doc_versions" data-url="https://compas.dev/compas_occ/doc_versions.txt" data-docs="https://compas.dev/compas_occ/">
         <li class="nav-item nav-versions dropdown">
           <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            0.4.0
+            0.4.1
           </a>
           <div id="doc_version_list" class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions"></div>
         </li>
@@ -107,12 +107,12 @@ If an orthogonal projection is not possible, the start or end point is returned,
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>point</strong> (<a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.Point.html#compas.geometry.Point" title="(in COMPAS v1.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Point</span></code></a>) – The point to project to the curve.</p></li>
+<li><p><strong>point</strong> (<a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.Point.html#compas.geometry.Point" title="(in COMPAS v1.15)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Point</span></code></a>) – The point to project to the curve.</p></li>
 <li><p><strong>return_parameter</strong> (<em>bool, optional</em>) – If True, return the curve parameter in addition to the closest point.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p><a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.Point.html#compas.geometry.Point" title="(in COMPAS v1.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Point</span></code></a> | tuple[<a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.Point.html#compas.geometry.Point" title="(in COMPAS v1.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Point</span></code></a>, float] – If <cite>return_parameter</cite> is False, the nearest point on the curve.
+<dd class="field-even"><p><a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.Point.html#compas.geometry.Point" title="(in COMPAS v1.15)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Point</span></code></a> | tuple[<a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.Point.html#compas.geometry.Point" title="(in COMPAS v1.15)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Point</span></code></a>, float] – If <cite>return_parameter</cite> is False, the nearest point on the curve.
 If <cite>return_parameter</cite> is True, the nearest point on the curve and the corresponding parameter.</p>
 </dd>
 </dl>
