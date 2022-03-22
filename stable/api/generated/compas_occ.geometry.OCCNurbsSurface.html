@@ -50,7 +50,7 @@
         <meta id="doc_versions" data-url="https://compas.dev/compas_occ/doc_versions.txt" data-docs="https://compas.dev/compas_occ/">
         <li class="nav-item nav-versions dropdown">
           <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            0.4.1
+            0.4.2
           </a>
           <div id="doc_version_list" class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions"></div>
         </li>
@@ -99,7 +99,7 @@
 <h1>OCCNurbsSurface</h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="compas_occ.geometry.OCCNurbsSurface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">compas_occ.geometry.</span></span><span class="sig-name descname"><span class="pre">OCCNurbsSurface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/surfaces/nurbs.py#L58"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">compas_occ.geometry.</span></span><span class="sig-name descname"><span class="pre">OCCNurbsSurface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/compas-dev/compas_occ/blob/main/src/compas_occ/geometry/surfaces/nurbs.py#L60"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Bases: <a class="reference internal" href="compas_occ.geometry.OCCSurface.html#compas_occ.geometry.OCCSurface" title="compas_occ.geometry.surfaces.surface.OCCSurface"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas_occ.geometry.surfaces.surface.OCCSurface</span></code></a>, <a class="reference external" href="https://compas.dev/compas/latest/api/generated/compas.geometry.NurbsSurface.html#compas.geometry.NurbsSurface" title="(in COMPAS v1.15)"><code class="xref py py-class docutils literal notranslate"><span class="pre">compas.geometry.surfaces.nurbs.NurbsSurface</span></code></a></p>
 <p>Class representing a NURBS surface based on the BSplineSurface of the OCC geometry kernel.</p>
 <dl class="field-list simple">
@@ -180,7 +180,7 @@
 <td><p>Construct a BSpline surface from its data representation.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsSurface.from_fill.html#compas_occ.geometry.OCCNurbsSurface.from_fill" title="compas_occ.geometry.OCCNurbsSurface.from_fill"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_fill</span></code></a></p></td>
-<td><p>Construct a NURBS surface from the infill between two NURBS curves.</p></td>
+<td><p>Construct a NURBS surface from the infill between two, three or four contiguous NURBS curves.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="compas_occ.geometry.OCCNurbsSurface.from_parameters.html#compas_occ.geometry.OCCNurbsSurface.from_parameters" title="compas_occ.geometry.OCCNurbsSurface.from_parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_parameters</span></code></a></p></td>
 <td><p>Construct a NURBS surface from explicit parameters.</p></td>
@@ -331,9 +331,11 @@
 <li class="toctree-l2 nav-item"><a class="nav-link reference internal" href="../../examples/curve_from_line.html">Curve From Line</a></li>
 <li class="toctree-l2 nav-item"><a class="nav-link reference internal" href="../../examples/curve_from_parameters.html">Curve From Parameters</a></li>
 <li class="toctree-l2 nav-item"><a class="nav-link reference internal" href="../../examples/curve_from_points.html">Curve From Control Points</a></li>
+<li class="toctree-l2 nav-item"><a class="nav-link reference internal" href="../../examples/curve_joining.html">Curve Joining</a></li>
 <li class="toctree-l2 nav-item"><a class="nav-link reference internal" href="../../examples/curve_segmentation.html">Curve Segmentation</a></li>
 <li class="toctree-l2 nav-item"><a class="nav-link reference internal" href="../../examples/surface_aabb.html">Surface Axis-Aligned Bounding Box</a></li>
 <li class="toctree-l2 nav-item"><a class="nav-link reference internal" href="../../examples/surface_frames.html">Surface Frames</a></li>
+<li class="toctree-l2 nav-item"><a class="nav-link reference internal" href="../../examples/surface_from_fill.html">Surface From Fill</a></li>
 <li class="toctree-l2 nav-item"><a class="nav-link reference internal" href="../../examples/surface_from_meshgrid.html">Surface From Meshgrid</a></li>
 <li class="toctree-l2 nav-item"><a class="nav-link reference internal" href="../../examples/surface_from_parameters.html">Surface From Parameters</a></li>
 <li class="toctree-l2 nav-item"><a class="nav-link reference internal" href="../../examples/surface_from_points.html">Surface From Points</a></li>
